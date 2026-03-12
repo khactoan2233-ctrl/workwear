@@ -1,0 +1,228 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f6f8;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 220px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+/* menu */
+.sidebar ul {
+    list-style: none;
+    flex: 1;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.menu-item {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background: #000;
+    color: #fff;
+}
+
+/* settings bottom */
+.sidebar .bottom {
+    margin-top: auto;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* ===== MAIN ===== */
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* ===== SEARCH BAR ===== */
+.top-bar {
+    margin-bottom: 20px;
+}
+
+.top-bar form {
+    display: flex;
+}
+
+.top-bar input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* ===== TABLE ===== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.table thead {
+    background: #f1f1f1;
+}
+
+.table th,
+.table td {
+    padding: 14px 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    font-weight: bold;
+}
+
+/* hover row */
+.table tbody tr:hover {
+    background: #fafafa;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.action button {
+    width: 36px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* add - xanh lá */
+.action .add {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+/* view - xanh dương */
+.action .view {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* edit - vàng */
+.action .edit {
+    background-color: #f1c40f;
+    color: #000;
+}
+
+/* delete - đỏ */
+.action .delete {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* hover */
+.action button:hover {
+    opacity: 0.85;
+}
+
+/* active (click) */
+.action button:active {
+    transform: scale(0.95);
+}
+
+
+/* ===== TABLE FOOTER ===== */
+.table-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination button {
+    padding: 6px 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background: #000;
+    color: #fff;
+}
+
+.pagination button:hover {
+    background: #eee;
+}
+
+/* ===== LOGOUT BUTTON ===== */
+.sidebar input[value="Logout"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.sidebar input[value="Logout"]:hover {
+    background-color: #c0392b;
+}
+
+.sidebar input[value="Logout"]:active {
+    transform: scale(0.95);
+}
+
+/* đẩy logout xuống đáy sidebar */
+.sidebar > div {
+    margin-top: auto;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+
+

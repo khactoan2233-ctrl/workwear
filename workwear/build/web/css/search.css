@@ -1,0 +1,176 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 29, 2026, 11:13:06 PM
+    Author     : Toan
+*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 2px solid #000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img{
+    height: 70px;          /* KHÓA CHIỀU CAO LOGO */
+    width: auto;
+    display: block;
+    margin-left: 40%
+}
+
+.menu a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.search input {
+    padding: 6px 10px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.login{
+    margin-right: 5%
+}
+
+.login a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #000;
+    padding: 6px 14px;
+}
+
+.login a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.product_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product_card {
+    text-align: center;
+}
+
+
+.product_card img {
+    width: 100%;
+    height: 420px;          /* chỉnh cỡ ảnh to như hình */
+    object-fit: contain;    /* KHÔNG CẮT – giữ nguyên áo/quần */
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== FOOTER ===== */
+.footer1 {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-logo h2 {
+    font-size: 22px;
+    color: #fff;
+}
+
+.footer-cols {
+    display: flex;
+    gap: 40px;
+}
+
+.col h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.col a {
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.col a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* ===== FOOTER BOTTOM ===== */
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #ccc;
+}
+
+.footer-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+
+
+
+
